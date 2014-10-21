@@ -1,14 +1,26 @@
 ---
-title: API Reference
+title: BitPay API
 
 language_tabs:
-  - shell
   - ruby
   - python
+  - shell
+  - json
+
+# Please use the following order:
+#  - shell
+#  - php
+#  - json
+#  - python
+#  - ruby
+#  - java
+#  - c#
+#  - perl
+#  - android
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
+  - BitPay API v1
+  - <a href='https://bitpay.com/'>BitPay</a>
 
 includes:
   - errors
@@ -44,6 +56,18 @@ api = kittn.authorize('meowmeowmeow')
 # With shell, you can just pass the correct header with each request
 curl "api_endpoint_here"
   -H "Authorization: meowmeowmeow"
+```
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Fluffums",
+    "breed": "calico",
+    "fluffiness": 6,
+    "cuteness": 7
+  }
+]
 ```
 
 > Make sure to replace `meowmeowmeow` with your API key.
@@ -165,4 +189,3 @@ This endpoint retrieves a specific kitten.
 Parameter | Description
 --------- | -----------
 ID | The ID of the cat to retrieve
-
